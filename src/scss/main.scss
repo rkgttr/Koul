@@ -1,0 +1,109 @@
+
+// @import "components/prefixer";
+@import "components/mixins";
+@import "components/color";
+// Variables;
+@import "components/variables";
+// Reset
+@import "components/normalize";
+// components
+@import "components/global";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+@import "components/typography";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/date_picker/default";
+@import "components/date_picker/default.date";
+@import "components/date_picker/default.time";
+
+.color-picker {
+  // width: 100%;
+  .color{
+    background:#f85046;
+    // width: 100%;
+    height: 100px;
+  }
+}
+.palette,
+.grey,
+.accents {
+  display: flex;
+  div {
+    // width: 100%;
+    padding-top:10%;
+    flex-grow:1;
+  }
+  .black {
+    background:#202020!important;
+  }
+  .dark {
+    background:#424242;
+  }
+  .light {
+    background:#cdcdcd;
+  }
+  .white {
+    background:#fafafa!important;
+    border:1px solid rgba(0,0,0,.1);
+  }
+}
+.accents .accent {
+  cursor: pointer;
+  position: relative;
+  &.selected {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+      border:5px solid rgba(0,0,0,.5);
+    }
+  }
+}
+.palette {
+  div {
+    display: flex;
+    align-items: flex-end;
+    &.lighter,
+    &.darken {
+      height: 33%;
+    }
+  }
+  .color {
+    height: auto;
+    flex-grow: 3;
+  }
+  .extra {
+    display: none;
+    flex-grow: 2;
+  }
+}
+
+code {
+  display: block;
+  background:#e0e0e0 ;
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 5em;
+}

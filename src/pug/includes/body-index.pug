@@ -1,0 +1,52 @@
+.color-picker
+  .container
+    .color
+    h5 Primary colour
+    p.range-field
+      label(for="R") Red
+      input(type="range" name="R" id="R" min="0" max="255" value="248")
+    p.range-field
+      label(for="G") Green
+      input(type="range" name="G" id="G" min="0" max="255" value="80")
+    p.range-field
+      label(for="B") Blue
+      input(type="range" name="B" id="B" min="0" max="255" value="70")
+    .input-field
+      input#hex(type="text" name="hex" value="#f85046")
+      label(for="hex") Hex value
+    h5 Accents (pick up to three)
+    .accents
+      .accent
+      .accent
+      .accent
+      .accent
+      .accent
+    h5 Greys 
+    .grey
+      .black
+      .dark
+      .light
+      .white
+    p.range-field
+      label(for="A") Adjust primary colour component
+      input(type="range" name="A" id="A" min="5" max="40" value="40")
+    h4 Your palette
+    .palette
+      .color
+        .darken
+        .lighter
+      .extra._0
+        .darken
+        .lighter
+      .extra._1
+        .darken
+        .lighter
+      .extra._2
+        .darken
+        .lighter
+      .black
+      .dark
+      .light
+      .white
+    h4 SCSS
+    code

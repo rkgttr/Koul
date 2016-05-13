@@ -1,0 +1,9 @@
+{
+  "name": "koul",
+  "version": "0.1.0",
+  "dependencies": {
+  	"modernizr": "~2.8.0",
+  	"jquery": "~1.11.1"
+  }
+}
+
